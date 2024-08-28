@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Student MPG calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container p-5">
+    <h1 class="text-center mb-4">Student MPG calculator</h1>
+
+    <div class="row">
+        <div class="col-lg-4 bg-success p-5 text-dark text-center">
+            <h2>Total Marks: </h2>
+            <h3 id="totalmarks">600</h3>
+
+            <h2 class="mt-5">Obtained Marks: </h2>
+            <h3 id="obtainedmarks">Enter your marks</h3>
+
+            <h2 class="mt-5">Your percentage is: </h2>
+            <h3 id="percentage">Enter your marks</h3>
+
+            <h2 class="mt-5">Your grade is: </h2>
+            <h3 id="grade">Enter your marks</h3>
+        </div>
+        <div class="col-lg-8 bg-secondary p-5">
+            <h1>Enter your name</h1>
+            <input type="text" id="name" class="form-control mb-3">
+
+            <h1 class="mb-3">Enter your marks</h1>
+
+            Java: <input type="number" id="Java" class="form-control mb-3">
+
+            English:  <input type="number" id="english" class="form-control mb-3">
+ 
+            Physics: <input type="number" id="physics" class="form-control mb-3">
+ 
+            dbms:  <input type="number" id="dbms" class="form-control mb-3">
+ 
+            Maths: <input type="number" id="maths" class="form-control mb-3">
+ 
+            Computer Networks: <input type="number" id="cn" class="form-control mb-3">
+ 
+             <input type="submit" onclick="getmarks()" class="btn btn-success btn-lg">
+
+             <input type="reset" onclick="reset()" class="btn btn-warning btn-lg">
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div id="result_bg" class="col-sm-12 bg-success p-3 text-center">
+            <h1 id="result">Waiting for you to enter your marks. <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div></h1>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
